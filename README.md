@@ -30,7 +30,7 @@ const deep3 = new Deep3Api(config)
 
 try {
   const prediction = await deep3.getPrediction({
-    model: 'HODL_class_v1_0',
+    model: 'HODL-C1',
     chainId: 1,
     publicAddress: '0x0000000000000000000000000000000000000000'
   });
