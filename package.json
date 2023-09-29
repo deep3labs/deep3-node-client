@@ -1,6 +1,6 @@
 {
   "name": "@deep3labs/node-client",
-  "version": "v0.0.2",
+  "version": "v0.0.3",
   "description": "Deep3 Labs Node.js API client",
   "author": "Deep3 Labs",
   "repository": {
@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "generate:docs": "npx typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts && rm docs/README.md",
+    "generate:docs": "npx typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts",
     "build": "npm run clean && tsc && tsc -p tsconfig.esm.json",
     "prepublishOnly": "npm run build"
   },

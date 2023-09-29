@@ -16,49 +16,49 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetHodlerResult
+ * @interface PostHodlC1XTokensResponseInner
  */
-export interface GetHodlerResult {
+export interface PostHodlC1XTokensResponseInner {
     /**
      * 
-     * @type {number}
-     * @memberof GetHodlerResult
+     * @type {string}
+     * @memberof PostHodlC1XTokensResponseInner
      */
-    code: number;
+    address: string;
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof PostHodlC1XTokensResponseInner
      */
     result?: number;
 }
 
 /**
- * Check if a given object implements the GetHodlerResult interface.
+ * Check if a given object implements the PostHodlC1XTokensResponseInner interface.
  */
-export function instanceOfGetHodlerResult(value: object): boolean {
+export function instanceOfPostHodlC1XTokensResponseInner(value: object): boolean {
     let isInstance = true;
-    isInstance = isInstance && "code" in value;
+    isInstance = isInstance && "address" in value;
 
     return isInstance;
 }
 
-export function GetHodlerResultFromJSON(json: any): GetHodlerResult {
-    return GetHodlerResultFromJSONTyped(json, false);
+export function PostHodlC1XTokensResponseInnerFromJSON(json: any): PostHodlC1XTokensResponseInner {
+    return PostHodlC1XTokensResponseInnerFromJSONTyped(json, false);
 }
 
-export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetHodlerResult {
+export function PostHodlC1XTokensResponseInnerFromJSONTyped(json: any, ignoreDiscriminator: boolean): PostHodlC1XTokensResponseInner {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
         
-        'code': json['code'],
+        'address': json['address'],
         'result': !exists(json, 'result') ? undefined : json['result'],
     };
 }
 
-export function GetHodlerResultToJSON(value?: GetHodlerResult | null): any {
+export function PostHodlC1XTokensResponseInnerToJSON(value?: PostHodlC1XTokensResponseInner | null): any {
     if (value === undefined) {
         return undefined;
     }
@@ -67,7 +67,7 @@ export function GetHodlerResultToJSON(value?: GetHodlerResult | null): any {
     }
     return {
         
-        'code': value.code,
+        'address': value.address,
         'result': value.result,
     };
 }

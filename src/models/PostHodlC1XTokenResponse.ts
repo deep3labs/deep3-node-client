@@ -16,38 +16,38 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetHodlerResult
+ * @interface PostHodlC1XTokenResponse
  */
-export interface GetHodlerResult {
+export interface PostHodlC1XTokenResponse {
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof PostHodlC1XTokenResponse
      */
     code: number;
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof PostHodlC1XTokenResponse
      */
     result?: number;
 }
 
 /**
- * Check if a given object implements the GetHodlerResult interface.
+ * Check if a given object implements the PostHodlC1XTokenResponse interface.
  */
-export function instanceOfGetHodlerResult(value: object): boolean {
+export function instanceOfPostHodlC1XTokenResponse(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "code" in value;
 
     return isInstance;
 }
 
-export function GetHodlerResultFromJSON(json: any): GetHodlerResult {
-    return GetHodlerResultFromJSONTyped(json, false);
+export function PostHodlC1XTokenResponseFromJSON(json: any): PostHodlC1XTokenResponse {
+    return PostHodlC1XTokenResponseFromJSONTyped(json, false);
 }
 
-export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetHodlerResult {
+export function PostHodlC1XTokenResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): PostHodlC1XTokenResponse {
     if ((json === undefined) || (json === null)) {
         return json;
     }
@@ -58,7 +58,7 @@ export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boo
     };
 }
 
-export function GetHodlerResultToJSON(value?: GetHodlerResult | null): any {
+export function PostHodlC1XTokenResponseToJSON(value?: PostHodlC1XTokenResponse | null): any {
     if (value === undefined) {
         return undefined;
     }

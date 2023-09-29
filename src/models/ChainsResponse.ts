@@ -16,33 +16,33 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetChainsResult
+ * @interface ChainsResponse
  */
-export interface GetChainsResult {
+export interface ChainsResponse {
     /**
      * 
      * @type {number}
-     * @memberof GetChainsResult
+     * @memberof ChainsResponse
      */
     chainId: number;
     /**
      * 
      * @type {string}
-     * @memberof GetChainsResult
+     * @memberof ChainsResponse
      */
     name: string;
     /**
      * 
      * @type {Array<string>}
-     * @memberof GetChainsResult
+     * @memberof ChainsResponse
      */
     models: Array<string>;
 }
 
 /**
- * Check if a given object implements the GetChainsResult interface.
+ * Check if a given object implements the ChainsResponse interface.
  */
-export function instanceOfGetChainsResult(value: object): boolean {
+export function instanceOfChainsResponse(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "chainId" in value;
     isInstance = isInstance && "name" in value;
@@ -51,11 +51,11 @@ export function instanceOfGetChainsResult(value: object): boolean {
     return isInstance;
 }
 
-export function GetChainsResultFromJSON(json: any): GetChainsResult {
-    return GetChainsResultFromJSONTyped(json, false);
+export function ChainsResponseFromJSON(json: any): ChainsResponse {
+    return ChainsResponseFromJSONTyped(json, false);
 }
 
-export function GetChainsResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetChainsResult {
+export function ChainsResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): ChainsResponse {
     if ((json === undefined) || (json === null)) {
         return json;
     }
@@ -67,7 +67,7 @@ export function GetChainsResultFromJSONTyped(json: any, ignoreDiscriminator: boo
     };
 }
 
-export function GetChainsResultToJSON(value?: GetChainsResult | null): any {
+export function ChainsResponseToJSON(value?: ChainsResponse | null): any {
     if (value === undefined) {
         return undefined;
     }

@@ -1,4 +1,4 @@
-[@deep3labs/node-client](../README.md) / Exports
+[@deep3labs/node-client](README.md) / Exports
 
 # @deep3labs/node-client
 
@@ -20,21 +20,35 @@
 ### Interfaces
 
 - [ApiResponse](interfaces/ApiResponse.md)
+- [ChainsResponse](interfaces/ChainsResponse.md)
 - [ConfigurationParameters](interfaces/ConfigurationParameters.md)
 - [Consume](interfaces/Consume.md)
 - [ErrorContext](interfaces/ErrorContext.md)
 - [FetchParams](interfaces/FetchParams.md)
-- [GetChainsResult](interfaces/GetChainsResult.md)
+- [GetHodlC1PredictionRequest](interfaces/GetHodlC1PredictionRequest.md)
+- [GetHodlC1XTokenPredictionRequest](interfaces/GetHodlC1XTokenPredictionRequest.md)
+- [GetHodlC1XTokenPredictionsRequest](interfaces/GetHodlC1XTokenPredictionsRequest.md)
 - [GetHodlerPredictionRequest](interfaces/GetHodlerPredictionRequest.md)
-- [GetHodlerResult](interfaces/GetHodlerResult.md)
-- [GetModelsResult](interfaces/GetModelsResult.md)
 - [GetPredictionRequest](interfaces/GetPredictionRequest.md)
-- [GetPredictionResult](interfaces/GetPredictionResult.md)
+- [GetStakeSageHPredictionRequest](interfaces/GetStakeSageHPredictionRequest.md)
+- [GetStakeSageLPredictionRequest](interfaces/GetStakeSageLPredictionRequest.md)
+- [HodlC1Response](interfaces/HodlC1Response.md)
+- [HodlC1XTokenRequest](interfaces/HodlC1XTokenRequest.md)
+- [HodlC1XTokenRequestMappingsInner](interfaces/HodlC1XTokenRequestMappingsInner.md)
+- [HodlC1XTokenResponse](interfaces/HodlC1XTokenResponse.md)
+- [HodlC1XTokensRequest](interfaces/HodlC1XTokensRequest.md)
+- [HodlC1XTokensRequestAddressesInner](interfaces/HodlC1XTokensRequestAddressesInner.md)
+- [HodlC1XTokensResponseInner](interfaces/HodlC1XTokensResponseInner.md)
+- [HodlerResponse](interfaces/HodlerResponse.md)
 - [Middleware](interfaces/Middleware.md)
+- [ModelsResponse](interfaces/ModelsResponse.md)
+- [PredictionResponse](interfaces/PredictionResponse.md)
 - [RequestContext](interfaces/RequestContext.md)
 - [RequestOpts](interfaces/RequestOpts.md)
 - [ResponseContext](interfaces/ResponseContext.md)
 - [ResponseTransformer](interfaces/ResponseTransformer.md)
+- [StakeSageHResponse](interfaces/StakeSageHResponse.md)
+- [StakeSageLResponse](interfaces/StakeSageLResponse.md)
 
 ### Type Aliases
 
@@ -56,24 +70,60 @@
 
 ### Functions
 
-- [GetChainsResultFromJSON](modules.md#getchainsresultfromjson)
-- [GetChainsResultFromJSONTyped](modules.md#getchainsresultfromjsontyped)
-- [GetChainsResultToJSON](modules.md#getchainsresulttojson)
-- [GetHodlerResultFromJSON](modules.md#gethodlerresultfromjson)
-- [GetHodlerResultFromJSONTyped](modules.md#gethodlerresultfromjsontyped)
-- [GetHodlerResultToJSON](modules.md#gethodlerresulttojson)
-- [GetModelsResultFromJSON](modules.md#getmodelsresultfromjson)
-- [GetModelsResultFromJSONTyped](modules.md#getmodelsresultfromjsontyped)
-- [GetModelsResultToJSON](modules.md#getmodelsresulttojson)
-- [GetPredictionResultFromJSON](modules.md#getpredictionresultfromjson)
-- [GetPredictionResultFromJSONTyped](modules.md#getpredictionresultfromjsontyped)
-- [GetPredictionResultToJSON](modules.md#getpredictionresulttojson)
+- [ChainsResponseFromJSON](modules.md#chainsresponsefromjson)
+- [ChainsResponseFromJSONTyped](modules.md#chainsresponsefromjsontyped)
+- [ChainsResponseToJSON](modules.md#chainsresponsetojson)
+- [HodlC1ResponseFromJSON](modules.md#hodlc1responsefromjson)
+- [HodlC1ResponseFromJSONTyped](modules.md#hodlc1responsefromjsontyped)
+- [HodlC1ResponseToJSON](modules.md#hodlc1responsetojson)
+- [HodlC1XTokenRequestFromJSON](modules.md#hodlc1xtokenrequestfromjson)
+- [HodlC1XTokenRequestFromJSONTyped](modules.md#hodlc1xtokenrequestfromjsontyped)
+- [HodlC1XTokenRequestMappingsInnerFromJSON](modules.md#hodlc1xtokenrequestmappingsinnerfromjson)
+- [HodlC1XTokenRequestMappingsInnerFromJSONTyped](modules.md#hodlc1xtokenrequestmappingsinnerfromjsontyped)
+- [HodlC1XTokenRequestMappingsInnerToJSON](modules.md#hodlc1xtokenrequestmappingsinnertojson)
+- [HodlC1XTokenRequestToJSON](modules.md#hodlc1xtokenrequesttojson)
+- [HodlC1XTokenResponseFromJSON](modules.md#hodlc1xtokenresponsefromjson)
+- [HodlC1XTokenResponseFromJSONTyped](modules.md#hodlc1xtokenresponsefromjsontyped)
+- [HodlC1XTokenResponseToJSON](modules.md#hodlc1xtokenresponsetojson)
+- [HodlC1XTokensRequestAddressesInnerFromJSON](modules.md#hodlc1xtokensrequestaddressesinnerfromjson)
+- [HodlC1XTokensRequestAddressesInnerFromJSONTyped](modules.md#hodlc1xtokensrequestaddressesinnerfromjsontyped)
+- [HodlC1XTokensRequestAddressesInnerToJSON](modules.md#hodlc1xtokensrequestaddressesinnertojson)
+- [HodlC1XTokensRequestFromJSON](modules.md#hodlc1xtokensrequestfromjson)
+- [HodlC1XTokensRequestFromJSONTyped](modules.md#hodlc1xtokensrequestfromjsontyped)
+- [HodlC1XTokensRequestToJSON](modules.md#hodlc1xtokensrequesttojson)
+- [HodlC1XTokensResponseInnerFromJSON](modules.md#hodlc1xtokensresponseinnerfromjson)
+- [HodlC1XTokensResponseInnerFromJSONTyped](modules.md#hodlc1xtokensresponseinnerfromjsontyped)
+- [HodlC1XTokensResponseInnerToJSON](modules.md#hodlc1xtokensresponseinnertojson)
+- [HodlerResponseFromJSON](modules.md#hodlerresponsefromjson)
+- [HodlerResponseFromJSONTyped](modules.md#hodlerresponsefromjsontyped)
+- [HodlerResponseToJSON](modules.md#hodlerresponsetojson)
+- [ModelsResponseFromJSON](modules.md#modelsresponsefromjson)
+- [ModelsResponseFromJSONTyped](modules.md#modelsresponsefromjsontyped)
+- [ModelsResponseToJSON](modules.md#modelsresponsetojson)
+- [PredictionResponseFromJSON](modules.md#predictionresponsefromjson)
+- [PredictionResponseFromJSONTyped](modules.md#predictionresponsefromjsontyped)
+- [PredictionResponseToJSON](modules.md#predictionresponsetojson)
+- [StakeSageHResponseFromJSON](modules.md#stakesagehresponsefromjson)
+- [StakeSageHResponseFromJSONTyped](modules.md#stakesagehresponsefromjsontyped)
+- [StakeSageHResponseToJSON](modules.md#stakesagehresponsetojson)
+- [StakeSageLResponseFromJSON](modules.md#stakesagelresponsefromjson)
+- [StakeSageLResponseFromJSONTyped](modules.md#stakesagelresponsefromjsontyped)
+- [StakeSageLResponseToJSON](modules.md#stakesagelresponsetojson)
 - [canConsumeForm](modules.md#canconsumeform)
 - [exists](modules.md#exists)
-- [instanceOfGetChainsResult](modules.md#instanceofgetchainsresult)
-- [instanceOfGetHodlerResult](modules.md#instanceofgethodlerresult)
-- [instanceOfGetModelsResult](modules.md#instanceofgetmodelsresult)
-- [instanceOfGetPredictionResult](modules.md#instanceofgetpredictionresult)
+- [instanceOfChainsResponse](modules.md#instanceofchainsresponse)
+- [instanceOfHodlC1Response](modules.md#instanceofhodlc1response)
+- [instanceOfHodlC1XTokenRequest](modules.md#instanceofhodlc1xtokenrequest)
+- [instanceOfHodlC1XTokenRequestMappingsInner](modules.md#instanceofhodlc1xtokenrequestmappingsinner)
+- [instanceOfHodlC1XTokenResponse](modules.md#instanceofhodlc1xtokenresponse)
+- [instanceOfHodlC1XTokensRequest](modules.md#instanceofhodlc1xtokensrequest)
+- [instanceOfHodlC1XTokensRequestAddressesInner](modules.md#instanceofhodlc1xtokensrequestaddressesinner)
+- [instanceOfHodlC1XTokensResponseInner](modules.md#instanceofhodlc1xtokensresponseinner)
+- [instanceOfHodlerResponse](modules.md#instanceofhodlerresponse)
+- [instanceOfModelsResponse](modules.md#instanceofmodelsresponse)
+- [instanceOfPredictionResponse](modules.md#instanceofpredictionresponse)
+- [instanceOfStakeSageHResponse](modules.md#instanceofstakesagehresponse)
+- [instanceOfStakeSageLResponse](modules.md#instanceofstakesagelresponse)
 - [mapValues](modules.md#mapvalues)
 - [querystring](modules.md#querystring)
 
@@ -209,7 +259,7 @@ src/runtime.ts:271
 Deep3 Labs API
 No description provided (generated by Openapi Generator https://github.com/openapitools/openapi-generator)
 
-The version of the OpenAPI document: v0.0.2
+The version of the OpenAPI document: v0.0.3
 
 NOTE: This class is auto generated by OpenAPI Generator (https://openapi-generator.tech).
 https://openapi-generator.tech
@@ -250,70 +300,9 @@ src/runtime.ts:63
 
 ## Functions
 
-### GetChainsResultFromJSON
+### ChainsResponseFromJSON
 
-▸ **GetChainsResultFromJSON**(`json`): [`GetChainsResult`](interfaces/GetChainsResult.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `json` | `any` |
-
-#### Returns
-
-[`GetChainsResult`](interfaces/GetChainsResult.md)
-
-#### Defined in
-
-src/models/GetChainsResult.ts:54
-
-___
-
-### GetChainsResultFromJSONTyped
-
-▸ **GetChainsResultFromJSONTyped**(`json`, `ignoreDiscriminator`): [`GetChainsResult`](interfaces/GetChainsResult.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `json` | `any` |
-| `ignoreDiscriminator` | `boolean` |
-
-#### Returns
-
-[`GetChainsResult`](interfaces/GetChainsResult.md)
-
-#### Defined in
-
-src/models/GetChainsResult.ts:58
-
-___
-
-### GetChainsResultToJSON
-
-▸ **GetChainsResultToJSON**(`value?`): `any`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value?` | [`GetChainsResult`](interfaces/GetChainsResult.md) |
-
-#### Returns
-
-`any`
-
-#### Defined in
-
-src/models/GetChainsResult.ts:70
-
-___
-
-### GetHodlerResultFromJSON
-
-▸ **GetHodlerResultFromJSON**(`json`): [`GetHodlerResult`](interfaces/GetHodlerResult.md)
+▸ **ChainsResponseFromJSON**(`json`): [`ChainsResponse`](interfaces/ChainsResponse.md)
 
 #### Parameters
 
@@ -323,17 +312,17 @@ ___
 
 #### Returns
 
-[`GetHodlerResult`](interfaces/GetHodlerResult.md)
+[`ChainsResponse`](interfaces/ChainsResponse.md)
 
 #### Defined in
 
-src/models/GetHodlerResult.ts:46
+src/models/ChainsResponse.ts:54
 
 ___
 
-### GetHodlerResultFromJSONTyped
+### ChainsResponseFromJSONTyped
 
-▸ **GetHodlerResultFromJSONTyped**(`json`, `ignoreDiscriminator`): [`GetHodlerResult`](interfaces/GetHodlerResult.md)
+▸ **ChainsResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`ChainsResponse`](interfaces/ChainsResponse.md)
 
 #### Parameters
 
@@ -344,23 +333,23 @@ ___
 
 #### Returns
 
-[`GetHodlerResult`](interfaces/GetHodlerResult.md)
+[`ChainsResponse`](interfaces/ChainsResponse.md)
 
 #### Defined in
 
-src/models/GetHodlerResult.ts:50
+src/models/ChainsResponse.ts:58
 
 ___
 
-### GetHodlerResultToJSON
+### ChainsResponseToJSON
 
-▸ **GetHodlerResultToJSON**(`value?`): `any`
+▸ **ChainsResponseToJSON**(`value?`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value?` | [`GetHodlerResult`](interfaces/GetHodlerResult.md) |
+| `value?` | [`ChainsResponse`](interfaces/ChainsResponse.md) |
 
 #### Returns
 
@@ -368,13 +357,13 @@ ___
 
 #### Defined in
 
-src/models/GetHodlerResult.ts:61
+src/models/ChainsResponse.ts:70
 
 ___
 
-### GetModelsResultFromJSON
+### HodlC1ResponseFromJSON
 
-▸ **GetModelsResultFromJSON**(`json`): [`GetModelsResult`](interfaces/GetModelsResult.md)
+▸ **HodlC1ResponseFromJSON**(`json`): [`HodlC1Response`](interfaces/HodlC1Response.md)
 
 #### Parameters
 
@@ -384,17 +373,17 @@ ___
 
 #### Returns
 
-[`GetModelsResult`](interfaces/GetModelsResult.md)
+[`HodlC1Response`](interfaces/HodlC1Response.md)
 
 #### Defined in
 
-src/models/GetModelsResult.ts:47
+src/models/HodlC1Response.ts:46
 
 ___
 
-### GetModelsResultFromJSONTyped
+### HodlC1ResponseFromJSONTyped
 
-▸ **GetModelsResultFromJSONTyped**(`json`, `ignoreDiscriminator`): [`GetModelsResult`](interfaces/GetModelsResult.md)
+▸ **HodlC1ResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlC1Response`](interfaces/HodlC1Response.md)
 
 #### Parameters
 
@@ -405,23 +394,23 @@ ___
 
 #### Returns
 
-[`GetModelsResult`](interfaces/GetModelsResult.md)
+[`HodlC1Response`](interfaces/HodlC1Response.md)
 
 #### Defined in
 
-src/models/GetModelsResult.ts:51
+src/models/HodlC1Response.ts:50
 
 ___
 
-### GetModelsResultToJSON
+### HodlC1ResponseToJSON
 
-▸ **GetModelsResultToJSON**(`value?`): `any`
+▸ **HodlC1ResponseToJSON**(`value?`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value?` | [`GetModelsResult`](interfaces/GetModelsResult.md) |
+| `value?` | [`HodlC1Response`](interfaces/HodlC1Response.md) |
 
 #### Returns
 
@@ -429,13 +418,13 @@ ___
 
 #### Defined in
 
-src/models/GetModelsResult.ts:62
+src/models/HodlC1Response.ts:61
 
 ___
 
-### GetPredictionResultFromJSON
+### HodlC1XTokenRequestFromJSON
 
-▸ **GetPredictionResultFromJSON**(`json`): [`GetPredictionResult`](interfaces/GetPredictionResult.md)
+▸ **HodlC1XTokenRequestFromJSON**(`json`): [`HodlC1XTokenRequest`](interfaces/HodlC1XTokenRequest.md)
 
 #### Parameters
 
@@ -445,17 +434,17 @@ ___
 
 #### Returns
 
-[`GetPredictionResult`](interfaces/GetPredictionResult.md)
+[`HodlC1XTokenRequest`](interfaces/HodlC1XTokenRequest.md)
 
 #### Defined in
 
-src/models/GetPredictionResult.ts:46
+src/models/HodlC1XTokenRequest.ts:53
 
 ___
 
-### GetPredictionResultFromJSONTyped
+### HodlC1XTokenRequestFromJSONTyped
 
-▸ **GetPredictionResultFromJSONTyped**(`json`, `ignoreDiscriminator`): [`GetPredictionResult`](interfaces/GetPredictionResult.md)
+▸ **HodlC1XTokenRequestFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlC1XTokenRequest`](interfaces/HodlC1XTokenRequest.md)
 
 #### Parameters
 
@@ -466,23 +455,64 @@ ___
 
 #### Returns
 
-[`GetPredictionResult`](interfaces/GetPredictionResult.md)
+[`HodlC1XTokenRequest`](interfaces/HodlC1XTokenRequest.md)
 
 #### Defined in
 
-src/models/GetPredictionResult.ts:50
+src/models/HodlC1XTokenRequest.ts:57
 
 ___
 
-### GetPredictionResultToJSON
+### HodlC1XTokenRequestMappingsInnerFromJSON
 
-▸ **GetPredictionResultToJSON**(`value?`): `any`
+▸ **HodlC1XTokenRequestMappingsInnerFromJSON**(`json`): [`HodlC1XTokenRequestMappingsInner`](interfaces/HodlC1XTokenRequestMappingsInner.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value?` | [`GetPredictionResult`](interfaces/GetPredictionResult.md) |
+| `json` | `any` |
+
+#### Returns
+
+[`HodlC1XTokenRequestMappingsInner`](interfaces/HodlC1XTokenRequestMappingsInner.md)
+
+#### Defined in
+
+src/models/HodlC1XTokenRequestMappingsInner.ts:47
+
+___
+
+### HodlC1XTokenRequestMappingsInnerFromJSONTyped
+
+▸ **HodlC1XTokenRequestMappingsInnerFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlC1XTokenRequestMappingsInner`](interfaces/HodlC1XTokenRequestMappingsInner.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`HodlC1XTokenRequestMappingsInner`](interfaces/HodlC1XTokenRequestMappingsInner.md)
+
+#### Defined in
+
+src/models/HodlC1XTokenRequestMappingsInner.ts:51
+
+___
+
+### HodlC1XTokenRequestMappingsInnerToJSON
+
+▸ **HodlC1XTokenRequestMappingsInnerToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`HodlC1XTokenRequestMappingsInner`](interfaces/HodlC1XTokenRequestMappingsInner.md) |
 
 #### Returns
 
@@ -490,7 +520,576 @@ ___
 
 #### Defined in
 
-src/models/GetPredictionResult.ts:61
+src/models/HodlC1XTokenRequestMappingsInner.ts:62
+
+___
+
+### HodlC1XTokenRequestToJSON
+
+▸ **HodlC1XTokenRequestToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`HodlC1XTokenRequest`](interfaces/HodlC1XTokenRequest.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/HodlC1XTokenRequest.ts:68
+
+___
+
+### HodlC1XTokenResponseFromJSON
+
+▸ **HodlC1XTokenResponseFromJSON**(`json`): [`HodlC1XTokenResponse`](interfaces/HodlC1XTokenResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`HodlC1XTokenResponse`](interfaces/HodlC1XTokenResponse.md)
+
+#### Defined in
+
+src/models/HodlC1XTokenResponse.ts:46
+
+___
+
+### HodlC1XTokenResponseFromJSONTyped
+
+▸ **HodlC1XTokenResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlC1XTokenResponse`](interfaces/HodlC1XTokenResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`HodlC1XTokenResponse`](interfaces/HodlC1XTokenResponse.md)
+
+#### Defined in
+
+src/models/HodlC1XTokenResponse.ts:50
+
+___
+
+### HodlC1XTokenResponseToJSON
+
+▸ **HodlC1XTokenResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`HodlC1XTokenResponse`](interfaces/HodlC1XTokenResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/HodlC1XTokenResponse.ts:61
+
+___
+
+### HodlC1XTokensRequestAddressesInnerFromJSON
+
+▸ **HodlC1XTokensRequestAddressesInnerFromJSON**(`json`): [`HodlC1XTokensRequestAddressesInner`](interfaces/HodlC1XTokensRequestAddressesInner.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`HodlC1XTokensRequestAddressesInner`](interfaces/HodlC1XTokensRequestAddressesInner.md)
+
+#### Defined in
+
+src/models/HodlC1XTokensRequestAddressesInner.ts:53
+
+___
+
+### HodlC1XTokensRequestAddressesInnerFromJSONTyped
+
+▸ **HodlC1XTokensRequestAddressesInnerFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlC1XTokensRequestAddressesInner`](interfaces/HodlC1XTokensRequestAddressesInner.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`HodlC1XTokensRequestAddressesInner`](interfaces/HodlC1XTokensRequestAddressesInner.md)
+
+#### Defined in
+
+src/models/HodlC1XTokensRequestAddressesInner.ts:57
+
+___
+
+### HodlC1XTokensRequestAddressesInnerToJSON
+
+▸ **HodlC1XTokensRequestAddressesInnerToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`HodlC1XTokensRequestAddressesInner`](interfaces/HodlC1XTokensRequestAddressesInner.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/HodlC1XTokensRequestAddressesInner.ts:68
+
+___
+
+### HodlC1XTokensRequestFromJSON
+
+▸ **HodlC1XTokensRequestFromJSON**(`json`): [`HodlC1XTokensRequest`](interfaces/HodlC1XTokensRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`HodlC1XTokensRequest`](interfaces/HodlC1XTokensRequest.md)
+
+#### Defined in
+
+src/models/HodlC1XTokensRequest.ts:46
+
+___
+
+### HodlC1XTokensRequestFromJSONTyped
+
+▸ **HodlC1XTokensRequestFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlC1XTokensRequest`](interfaces/HodlC1XTokensRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`HodlC1XTokensRequest`](interfaces/HodlC1XTokensRequest.md)
+
+#### Defined in
+
+src/models/HodlC1XTokensRequest.ts:50
+
+___
+
+### HodlC1XTokensRequestToJSON
+
+▸ **HodlC1XTokensRequestToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`HodlC1XTokensRequest`](interfaces/HodlC1XTokensRequest.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/HodlC1XTokensRequest.ts:60
+
+___
+
+### HodlC1XTokensResponseInnerFromJSON
+
+▸ **HodlC1XTokensResponseInnerFromJSON**(`json`): [`HodlC1XTokensResponseInner`](interfaces/HodlC1XTokensResponseInner.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`HodlC1XTokensResponseInner`](interfaces/HodlC1XTokensResponseInner.md)
+
+#### Defined in
+
+src/models/HodlC1XTokensResponseInner.ts:46
+
+___
+
+### HodlC1XTokensResponseInnerFromJSONTyped
+
+▸ **HodlC1XTokensResponseInnerFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlC1XTokensResponseInner`](interfaces/HodlC1XTokensResponseInner.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`HodlC1XTokensResponseInner`](interfaces/HodlC1XTokensResponseInner.md)
+
+#### Defined in
+
+src/models/HodlC1XTokensResponseInner.ts:50
+
+___
+
+### HodlC1XTokensResponseInnerToJSON
+
+▸ **HodlC1XTokensResponseInnerToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`HodlC1XTokensResponseInner`](interfaces/HodlC1XTokensResponseInner.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/HodlC1XTokensResponseInner.ts:61
+
+___
+
+### HodlerResponseFromJSON
+
+▸ **HodlerResponseFromJSON**(`json`): [`HodlerResponse`](interfaces/HodlerResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`HodlerResponse`](interfaces/HodlerResponse.md)
+
+#### Defined in
+
+src/models/HodlerResponse.ts:46
+
+___
+
+### HodlerResponseFromJSONTyped
+
+▸ **HodlerResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlerResponse`](interfaces/HodlerResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`HodlerResponse`](interfaces/HodlerResponse.md)
+
+#### Defined in
+
+src/models/HodlerResponse.ts:50
+
+___
+
+### HodlerResponseToJSON
+
+▸ **HodlerResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`HodlerResponse`](interfaces/HodlerResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/HodlerResponse.ts:61
+
+___
+
+### ModelsResponseFromJSON
+
+▸ **ModelsResponseFromJSON**(`json`): [`ModelsResponse`](interfaces/ModelsResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`ModelsResponse`](interfaces/ModelsResponse.md)
+
+#### Defined in
+
+src/models/ModelsResponse.ts:47
+
+___
+
+### ModelsResponseFromJSONTyped
+
+▸ **ModelsResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`ModelsResponse`](interfaces/ModelsResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`ModelsResponse`](interfaces/ModelsResponse.md)
+
+#### Defined in
+
+src/models/ModelsResponse.ts:51
+
+___
+
+### ModelsResponseToJSON
+
+▸ **ModelsResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`ModelsResponse`](interfaces/ModelsResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/ModelsResponse.ts:62
+
+___
+
+### PredictionResponseFromJSON
+
+▸ **PredictionResponseFromJSON**(`json`): [`PredictionResponse`](interfaces/PredictionResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`PredictionResponse`](interfaces/PredictionResponse.md)
+
+#### Defined in
+
+src/models/PredictionResponse.ts:46
+
+___
+
+### PredictionResponseFromJSONTyped
+
+▸ **PredictionResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`PredictionResponse`](interfaces/PredictionResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`PredictionResponse`](interfaces/PredictionResponse.md)
+
+#### Defined in
+
+src/models/PredictionResponse.ts:50
+
+___
+
+### PredictionResponseToJSON
+
+▸ **PredictionResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`PredictionResponse`](interfaces/PredictionResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/PredictionResponse.ts:61
+
+___
+
+### StakeSageHResponseFromJSON
+
+▸ **StakeSageHResponseFromJSON**(`json`): [`StakeSageHResponse`](interfaces/StakeSageHResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`StakeSageHResponse`](interfaces/StakeSageHResponse.md)
+
+#### Defined in
+
+src/models/StakeSageHResponse.ts:46
+
+___
+
+### StakeSageHResponseFromJSONTyped
+
+▸ **StakeSageHResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`StakeSageHResponse`](interfaces/StakeSageHResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`StakeSageHResponse`](interfaces/StakeSageHResponse.md)
+
+#### Defined in
+
+src/models/StakeSageHResponse.ts:50
+
+___
+
+### StakeSageHResponseToJSON
+
+▸ **StakeSageHResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`StakeSageHResponse`](interfaces/StakeSageHResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/StakeSageHResponse.ts:61
+
+___
+
+### StakeSageLResponseFromJSON
+
+▸ **StakeSageLResponseFromJSON**(`json`): [`StakeSageLResponse`](interfaces/StakeSageLResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`StakeSageLResponse`](interfaces/StakeSageLResponse.md)
+
+#### Defined in
+
+src/models/StakeSageLResponse.ts:46
+
+___
+
+### StakeSageLResponseFromJSONTyped
+
+▸ **StakeSageLResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`StakeSageLResponse`](interfaces/StakeSageLResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`StakeSageLResponse`](interfaces/StakeSageLResponse.md)
+
+#### Defined in
+
+src/models/StakeSageLResponse.ts:50
+
+___
+
+### StakeSageLResponseToJSON
+
+▸ **StakeSageLResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`StakeSageLResponse`](interfaces/StakeSageLResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/StakeSageLResponse.ts:61
 
 ___
 
@@ -535,11 +1134,11 @@ src/runtime.ts:288
 
 ___
 
-### instanceOfGetChainsResult
+### instanceOfChainsResponse
 
-▸ **instanceOfGetChainsResult**(`value`): `boolean`
+▸ **instanceOfChainsResponse**(`value`): `boolean`
 
-Check if a given object implements the GetChainsResult interface.
+Check if a given object implements the ChainsResponse interface.
 
 #### Parameters
 
@@ -553,15 +1152,15 @@ Check if a given object implements the GetChainsResult interface.
 
 #### Defined in
 
-src/models/GetChainsResult.ts:45
+src/models/ChainsResponse.ts:45
 
 ___
 
-### instanceOfGetHodlerResult
+### instanceOfHodlC1Response
 
-▸ **instanceOfGetHodlerResult**(`value`): `boolean`
+▸ **instanceOfHodlC1Response**(`value`): `boolean`
 
-Check if a given object implements the GetHodlerResult interface.
+Check if a given object implements the HodlC1Response interface.
 
 #### Parameters
 
@@ -575,15 +1174,15 @@ Check if a given object implements the GetHodlerResult interface.
 
 #### Defined in
 
-src/models/GetHodlerResult.ts:39
+src/models/HodlC1Response.ts:39
 
 ___
 
-### instanceOfGetModelsResult
+### instanceOfHodlC1XTokenRequest
 
-▸ **instanceOfGetModelsResult**(`value`): `boolean`
+▸ **instanceOfHodlC1XTokenRequest**(`value`): `boolean`
 
-Check if a given object implements the GetModelsResult interface.
+Check if a given object implements the HodlC1XTokenRequest interface.
 
 #### Parameters
 
@@ -597,15 +1196,15 @@ Check if a given object implements the GetModelsResult interface.
 
 #### Defined in
 
-src/models/GetModelsResult.ts:39
+src/models/HodlC1XTokenRequest.ts:46
 
 ___
 
-### instanceOfGetPredictionResult
+### instanceOfHodlC1XTokenRequestMappingsInner
 
-▸ **instanceOfGetPredictionResult**(`value`): `boolean`
+▸ **instanceOfHodlC1XTokenRequestMappingsInner**(`value`): `boolean`
 
-Check if a given object implements the GetPredictionResult interface.
+Check if a given object implements the HodlC1XTokenRequestMappingsInner interface.
 
 #### Parameters
 
@@ -619,7 +1218,205 @@ Check if a given object implements the GetPredictionResult interface.
 
 #### Defined in
 
-src/models/GetPredictionResult.ts:39
+src/models/HodlC1XTokenRequestMappingsInner.ts:39
+
+___
+
+### instanceOfHodlC1XTokenResponse
+
+▸ **instanceOfHodlC1XTokenResponse**(`value`): `boolean`
+
+Check if a given object implements the HodlC1XTokenResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/HodlC1XTokenResponse.ts:39
+
+___
+
+### instanceOfHodlC1XTokensRequest
+
+▸ **instanceOfHodlC1XTokensRequest**(`value`): `boolean`
+
+Check if a given object implements the HodlC1XTokensRequest interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/HodlC1XTokensRequest.ts:40
+
+___
+
+### instanceOfHodlC1XTokensRequestAddressesInner
+
+▸ **instanceOfHodlC1XTokensRequestAddressesInner**(`value`): `boolean`
+
+Check if a given object implements the HodlC1XTokensRequestAddressesInner interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/HodlC1XTokensRequestAddressesInner.ts:46
+
+___
+
+### instanceOfHodlC1XTokensResponseInner
+
+▸ **instanceOfHodlC1XTokensResponseInner**(`value`): `boolean`
+
+Check if a given object implements the HodlC1XTokensResponseInner interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/HodlC1XTokensResponseInner.ts:39
+
+___
+
+### instanceOfHodlerResponse
+
+▸ **instanceOfHodlerResponse**(`value`): `boolean`
+
+Check if a given object implements the HodlerResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/HodlerResponse.ts:39
+
+___
+
+### instanceOfModelsResponse
+
+▸ **instanceOfModelsResponse**(`value`): `boolean`
+
+Check if a given object implements the ModelsResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/ModelsResponse.ts:39
+
+___
+
+### instanceOfPredictionResponse
+
+▸ **instanceOfPredictionResponse**(`value`): `boolean`
+
+Check if a given object implements the PredictionResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/PredictionResponse.ts:39
+
+___
+
+### instanceOfStakeSageHResponse
+
+▸ **instanceOfStakeSageHResponse**(`value`): `boolean`
+
+Check if a given object implements the StakeSageHResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/StakeSageHResponse.ts:39
+
+___
+
+### instanceOfStakeSageLResponse
+
+▸ **instanceOfStakeSageLResponse**(`value`): `boolean`
+
+Check if a given object implements the StakeSageLResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/StakeSageLResponse.ts:39
 
 ___
 

@@ -16,38 +16,38 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetHodlerResult
+ * @interface PredictionResponse
  */
-export interface GetHodlerResult {
+export interface PredictionResponse {
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof PredictionResponse
      */
     code: number;
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof PredictionResponse
      */
     result?: number;
 }
 
 /**
- * Check if a given object implements the GetHodlerResult interface.
+ * Check if a given object implements the PredictionResponse interface.
  */
-export function instanceOfGetHodlerResult(value: object): boolean {
+export function instanceOfPredictionResponse(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "code" in value;
 
     return isInstance;
 }
 
-export function GetHodlerResultFromJSON(json: any): GetHodlerResult {
-    return GetHodlerResultFromJSONTyped(json, false);
+export function PredictionResponseFromJSON(json: any): PredictionResponse {
+    return PredictionResponseFromJSONTyped(json, false);
 }
 
-export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetHodlerResult {
+export function PredictionResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): PredictionResponse {
     if ((json === undefined) || (json === null)) {
         return json;
     }
@@ -58,7 +58,7 @@ export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boo
     };
 }
 
-export function GetHodlerResultToJSON(value?: GetHodlerResult | null): any {
+export function PredictionResponseToJSON(value?: PredictionResponse | null): any {
     if (value === undefined) {
         return undefined;
     }

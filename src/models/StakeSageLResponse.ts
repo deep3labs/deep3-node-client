@@ -16,38 +16,38 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetHodlerResult
+ * @interface StakeSageLResponse
  */
-export interface GetHodlerResult {
+export interface StakeSageLResponse {
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof StakeSageLResponse
      */
     code: number;
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof StakeSageLResponse
      */
     result?: number;
 }
 
 /**
- * Check if a given object implements the GetHodlerResult interface.
+ * Check if a given object implements the StakeSageLResponse interface.
  */
-export function instanceOfGetHodlerResult(value: object): boolean {
+export function instanceOfStakeSageLResponse(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "code" in value;
 
     return isInstance;
 }
 
-export function GetHodlerResultFromJSON(json: any): GetHodlerResult {
-    return GetHodlerResultFromJSONTyped(json, false);
+export function StakeSageLResponseFromJSON(json: any): StakeSageLResponse {
+    return StakeSageLResponseFromJSONTyped(json, false);
 }
 
-export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetHodlerResult {
+export function StakeSageLResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): StakeSageLResponse {
     if ((json === undefined) || (json === null)) {
         return json;
     }
@@ -58,7 +58,7 @@ export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boo
     };
 }
 
-export function GetHodlerResultToJSON(value?: GetHodlerResult | null): any {
+export function StakeSageLResponseToJSON(value?: StakeSageLResponse | null): any {
     if (value === undefined) {
         return undefined;
     }

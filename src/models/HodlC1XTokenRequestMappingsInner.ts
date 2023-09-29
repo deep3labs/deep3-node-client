@@ -16,58 +16,50 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetChainsResult
+ * @interface HodlC1XTokenRequestMappingsInner
  */
-export interface GetChainsResult {
+export interface HodlC1XTokenRequestMappingsInner {
     /**
      * 
      * @type {number}
-     * @memberof GetChainsResult
+     * @memberof HodlC1XTokenRequestMappingsInner
      */
     chainId: number;
     /**
      * 
      * @type {string}
-     * @memberof GetChainsResult
+     * @memberof HodlC1XTokenRequestMappingsInner
      */
-    name: string;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof GetChainsResult
-     */
-    models: Array<string>;
+    address: string;
 }
 
 /**
- * Check if a given object implements the GetChainsResult interface.
+ * Check if a given object implements the HodlC1XTokenRequestMappingsInner interface.
  */
-export function instanceOfGetChainsResult(value: object): boolean {
+export function instanceOfHodlC1XTokenRequestMappingsInner(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "chainId" in value;
-    isInstance = isInstance && "name" in value;
-    isInstance = isInstance && "models" in value;
+    isInstance = isInstance && "address" in value;
 
     return isInstance;
 }
 
-export function GetChainsResultFromJSON(json: any): GetChainsResult {
-    return GetChainsResultFromJSONTyped(json, false);
+export function HodlC1XTokenRequestMappingsInnerFromJSON(json: any): HodlC1XTokenRequestMappingsInner {
+    return HodlC1XTokenRequestMappingsInnerFromJSONTyped(json, false);
 }
 
-export function GetChainsResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetChainsResult {
+export function HodlC1XTokenRequestMappingsInnerFromJSONTyped(json: any, ignoreDiscriminator: boolean): HodlC1XTokenRequestMappingsInner {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
         
         'chainId': json['chainId'],
-        'name': json['name'],
-        'models': json['models'],
+        'address': json['address'],
     };
 }
 
-export function GetChainsResultToJSON(value?: GetChainsResult | null): any {
+export function HodlC1XTokenRequestMappingsInnerToJSON(value?: HodlC1XTokenRequestMappingsInner | null): any {
     if (value === undefined) {
         return undefined;
     }
@@ -77,8 +69,7 @@ export function GetChainsResultToJSON(value?: GetChainsResult | null): any {
     return {
         
         'chainId': value.chainId,
-        'name': value.name,
-        'models': value.models,
+        'address': value.address,
     };
 }
 

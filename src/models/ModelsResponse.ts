@@ -16,58 +16,50 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetChainsResult
+ * @interface ModelsResponse
  */
-export interface GetChainsResult {
-    /**
-     * 
-     * @type {number}
-     * @memberof GetChainsResult
-     */
-    chainId: number;
+export interface ModelsResponse {
     /**
      * 
      * @type {string}
-     * @memberof GetChainsResult
+     * @memberof ModelsResponse
      */
     name: string;
     /**
      * 
-     * @type {Array<string>}
-     * @memberof GetChainsResult
+     * @type {Array<number>}
+     * @memberof ModelsResponse
      */
-    models: Array<string>;
+    chains: Array<number>;
 }
 
 /**
- * Check if a given object implements the GetChainsResult interface.
+ * Check if a given object implements the ModelsResponse interface.
  */
-export function instanceOfGetChainsResult(value: object): boolean {
+export function instanceOfModelsResponse(value: object): boolean {
     let isInstance = true;
-    isInstance = isInstance && "chainId" in value;
     isInstance = isInstance && "name" in value;
-    isInstance = isInstance && "models" in value;
+    isInstance = isInstance && "chains" in value;
 
     return isInstance;
 }
 
-export function GetChainsResultFromJSON(json: any): GetChainsResult {
-    return GetChainsResultFromJSONTyped(json, false);
+export function ModelsResponseFromJSON(json: any): ModelsResponse {
+    return ModelsResponseFromJSONTyped(json, false);
 }
 
-export function GetChainsResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetChainsResult {
+export function ModelsResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): ModelsResponse {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
         
-        'chainId': json['chainId'],
         'name': json['name'],
-        'models': json['models'],
+        'chains': json['chains'],
     };
 }
 
-export function GetChainsResultToJSON(value?: GetChainsResult | null): any {
+export function ModelsResponseToJSON(value?: ModelsResponse | null): any {
     if (value === undefined) {
         return undefined;
     }
@@ -76,9 +68,8 @@ export function GetChainsResultToJSON(value?: GetChainsResult | null): any {
     }
     return {
         
-        'chainId': value.chainId,
         'name': value.name,
-        'models': value.models,
+        'chains': value.chains,
     };
 }
 

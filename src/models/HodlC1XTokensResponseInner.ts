@@ -16,49 +16,49 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface GetHodlerResult
+ * @interface HodlC1XTokensResponseInner
  */
-export interface GetHodlerResult {
+export interface HodlC1XTokensResponseInner {
     /**
      * 
-     * @type {number}
-     * @memberof GetHodlerResult
+     * @type {string}
+     * @memberof HodlC1XTokensResponseInner
      */
-    code: number;
+    address: string;
     /**
      * 
      * @type {number}
-     * @memberof GetHodlerResult
+     * @memberof HodlC1XTokensResponseInner
      */
     result?: number;
 }
 
 /**
- * Check if a given object implements the GetHodlerResult interface.
+ * Check if a given object implements the HodlC1XTokensResponseInner interface.
  */
-export function instanceOfGetHodlerResult(value: object): boolean {
+export function instanceOfHodlC1XTokensResponseInner(value: object): boolean {
     let isInstance = true;
-    isInstance = isInstance && "code" in value;
+    isInstance = isInstance && "address" in value;
 
     return isInstance;
 }
 
-export function GetHodlerResultFromJSON(json: any): GetHodlerResult {
-    return GetHodlerResultFromJSONTyped(json, false);
+export function HodlC1XTokensResponseInnerFromJSON(json: any): HodlC1XTokensResponseInner {
+    return HodlC1XTokensResponseInnerFromJSONTyped(json, false);
 }
 
-export function GetHodlerResultFromJSONTyped(json: any, ignoreDiscriminator: boolean): GetHodlerResult {
+export function HodlC1XTokensResponseInnerFromJSONTyped(json: any, ignoreDiscriminator: boolean): HodlC1XTokensResponseInner {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
         
-        'code': json['code'],
+        'address': json['address'],
         'result': !exists(json, 'result') ? undefined : json['result'],
     };
 }
 
-export function GetHodlerResultToJSON(value?: GetHodlerResult | null): any {
+export function HodlC1XTokensResponseInnerToJSON(value?: HodlC1XTokensResponseInner | null): any {
     if (value === undefined) {
         return undefined;
     }
@@ -67,7 +67,7 @@ export function GetHodlerResultToJSON(value?: GetHodlerResult | null): any {
     }
     return {
         
-        'code': value.code,
+        'address': value.address,
         'result': value.result,
     };
 }

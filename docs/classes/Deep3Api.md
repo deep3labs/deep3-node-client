@@ -22,12 +22,22 @@
 
 - [getChains](Deep3Api.md#getchains)
 - [getChainsRaw](Deep3Api.md#getchainsraw)
+- [getHodlC1Prediction](Deep3Api.md#gethodlc1prediction)
+- [getHodlC1PredictionRaw](Deep3Api.md#gethodlc1predictionraw)
+- [getHodlC1XTokenPrediction](Deep3Api.md#gethodlc1xtokenprediction)
+- [getHodlC1XTokenPredictionRaw](Deep3Api.md#gethodlc1xtokenpredictionraw)
+- [getHodlC1XTokenPredictions](Deep3Api.md#gethodlc1xtokenpredictions)
+- [getHodlC1XTokenPredictionsRaw](Deep3Api.md#gethodlc1xtokenpredictionsraw)
 - [getHodlerPrediction](Deep3Api.md#gethodlerprediction)
 - [getHodlerPredictionRaw](Deep3Api.md#gethodlerpredictionraw)
 - [getModels](Deep3Api.md#getmodels)
 - [getModelsRaw](Deep3Api.md#getmodelsraw)
 - [getPrediction](Deep3Api.md#getprediction)
 - [getPredictionRaw](Deep3Api.md#getpredictionraw)
+- [getStakeSageHPrediction](Deep3Api.md#getstakesagehprediction)
+- [getStakeSageHPredictionRaw](Deep3Api.md#getstakesagehpredictionraw)
+- [getStakeSageLPrediction](Deep3Api.md#getstakesagelprediction)
+- [getStakeSageLPredictionRaw](Deep3Api.md#getstakesagelpredictionraw)
 - [isJsonMime](Deep3Api.md#isjsonmime)
 - [request](Deep3Api.md#request)
 - [withMiddleware](Deep3Api.md#withmiddleware)
@@ -72,7 +82,7 @@ src/runtime.ts:73
 
 ### getChains
 
-▸ **getChains**(`initOverrides?`): `Promise`<[`GetChainsResult`](../interfaces/GetChainsResult.md)\>
+▸ **getChains**(`initOverrides?`): `Promise`<[`ChainsResponse`](../interfaces/ChainsResponse.md)\>
 
 Will return currently supported chains
 Get currently supported chains and the active machine learning models
@@ -85,17 +95,17 @@ Get currently supported chains and the active machine learning models
 
 #### Returns
 
-`Promise`<[`GetChainsResult`](../interfaces/GetChainsResult.md)\>
+`Promise`<[`ChainsResponse`](../interfaces/ChainsResponse.md)\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:77
+src/apis/Deep3Api.ts:121
 
 ___
 
 ### getChainsRaw
 
-▸ **getChainsRaw**(`initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetChainsResult`](../interfaces/GetChainsResult.md)\>\>
+▸ **getChainsRaw**(`initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`ChainsResponse`](../interfaces/ChainsResponse.md)\>\>
 
 Will return currently supported chains
 Get currently supported chains and the active machine learning models
@@ -108,17 +118,161 @@ Get currently supported chains and the active machine learning models
 
 #### Returns
 
-`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetChainsResult`](../interfaces/GetChainsResult.md)\>\>
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`ChainsResponse`](../interfaces/ChainsResponse.md)\>\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:54
+src/apis/Deep3Api.ts:98
+
+___
+
+### getHodlC1Prediction
+
+▸ **getHodlC1Prediction**(`requestParameters`, `initOverrides?`): `Promise`<[`HodlC1Response`](../interfaces/HodlC1Response.md)\>
+
+Will return the prediction
+Get a HODL-C1 prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetHodlC1PredictionRequest`](../interfaces/GetHodlC1PredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`HodlC1Response`](../interfaces/HodlC1Response.md)\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:161
+
+___
+
+### getHodlC1PredictionRaw
+
+▸ **getHodlC1PredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlC1Response`](../interfaces/HodlC1Response.md)\>\>
+
+Will return the prediction
+Get a HODL-C1 prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetHodlC1PredictionRequest`](../interfaces/GetHodlC1PredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlC1Response`](../interfaces/HodlC1Response.md)\>\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:130
+
+___
+
+### getHodlC1XTokenPrediction
+
+▸ **getHodlC1XTokenPrediction**(`requestParameters`, `initOverrides?`): `Promise`<[`HodlC1XTokenResponse`](../interfaces/HodlC1XTokenResponse.md)\>
+
+Will return the prediction
+Get a HODL-C1 cross-chain token prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetHodlC1XTokenPredictionRequest`](../interfaces/GetHodlC1XTokenPredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`HodlC1XTokenResponse`](../interfaces/HodlC1XTokenResponse.md)\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:200
+
+___
+
+### getHodlC1XTokenPredictionRaw
+
+▸ **getHodlC1XTokenPredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlC1XTokenResponse`](../interfaces/HodlC1XTokenResponse.md)\>\>
+
+Will return the prediction
+Get a HODL-C1 cross-chain token prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetHodlC1XTokenPredictionRequest`](../interfaces/GetHodlC1XTokenPredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlC1XTokenResponse`](../interfaces/HodlC1XTokenResponse.md)\>\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:170
+
+___
+
+### getHodlC1XTokenPredictions
+
+▸ **getHodlC1XTokenPredictions**(`requestParameters`, `initOverrides?`): `Promise`<[`HodlC1XTokensResponseInner`](../interfaces/HodlC1XTokensResponseInner.md)[]\>
+
+Will return the predictions
+Get HODL-C1 cross-chain token predictions
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetHodlC1XTokenPredictionsRequest`](../interfaces/GetHodlC1XTokenPredictionsRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`HodlC1XTokensResponseInner`](../interfaces/HodlC1XTokensResponseInner.md)[]\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:239
+
+___
+
+### getHodlC1XTokenPredictionsRaw
+
+▸ **getHodlC1XTokenPredictionsRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlC1XTokensResponseInner`](../interfaces/HodlC1XTokensResponseInner.md)[]\>\>
+
+Will return the predictions
+Get HODL-C1 cross-chain token predictions
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetHodlC1XTokenPredictionsRequest`](../interfaces/GetHodlC1XTokenPredictionsRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlC1XTokensResponseInner`](../interfaces/HodlC1XTokensResponseInner.md)[]\>\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:209
 
 ___
 
 ### getHodlerPrediction
 
-▸ **getHodlerPrediction**(`requestParameters`, `initOverrides?`): `Promise`<[`GetHodlerResult`](../interfaces/GetHodlerResult.md)\>
+▸ **getHodlerPrediction**(`requestParameters`, `initOverrides?`): `Promise`<[`HodlerResponse`](../interfaces/HodlerResponse.md)\>
 
 Will return the prediction
 Get a Hodler prediction
@@ -132,17 +286,17 @@ Get a Hodler prediction
 
 #### Returns
 
-`Promise`<[`GetHodlerResult`](../interfaces/GetHodlerResult.md)\>
+`Promise`<[`HodlerResponse`](../interfaces/HodlerResponse.md)\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:117
+src/apis/Deep3Api.ts:279
 
 ___
 
 ### getHodlerPredictionRaw
 
-▸ **getHodlerPredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetHodlerResult`](../interfaces/GetHodlerResult.md)\>\>
+▸ **getHodlerPredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlerResponse`](../interfaces/HodlerResponse.md)\>\>
 
 Will return the prediction
 Get a Hodler prediction
@@ -156,17 +310,17 @@ Get a Hodler prediction
 
 #### Returns
 
-`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetHodlerResult`](../interfaces/GetHodlerResult.md)\>\>
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`HodlerResponse`](../interfaces/HodlerResponse.md)\>\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:86
+src/apis/Deep3Api.ts:248
 
 ___
 
 ### getModels
 
-▸ **getModels**(`initOverrides?`): `Promise`<[`GetModelsResult`](../interfaces/GetModelsResult.md)\>
+▸ **getModels**(`initOverrides?`): `Promise`<[`ModelsResponse`](../interfaces/ModelsResponse.md)\>
 
 Will return active machine learning models
 Get active machine learning models and the chains they support
@@ -179,17 +333,17 @@ Get active machine learning models and the chains they support
 
 #### Returns
 
-`Promise`<[`GetModelsResult`](../interfaces/GetModelsResult.md)\>
+`Promise`<[`ModelsResponse`](../interfaces/ModelsResponse.md)\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:149
+src/apis/Deep3Api.ts:311
 
 ___
 
 ### getModelsRaw
 
-▸ **getModelsRaw**(`initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetModelsResult`](../interfaces/GetModelsResult.md)\>\>
+▸ **getModelsRaw**(`initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`ModelsResponse`](../interfaces/ModelsResponse.md)\>\>
 
 Will return active machine learning models
 Get active machine learning models and the chains they support
@@ -202,17 +356,17 @@ Get active machine learning models and the chains they support
 
 #### Returns
 
-`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetModelsResult`](../interfaces/GetModelsResult.md)\>\>
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`ModelsResponse`](../interfaces/ModelsResponse.md)\>\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:126
+src/apis/Deep3Api.ts:288
 
 ___
 
 ### getPrediction
 
-▸ **getPrediction**(`requestParameters`, `initOverrides?`): `Promise`<[`GetPredictionResult`](../interfaces/GetPredictionResult.md)\>
+▸ **getPrediction**(`requestParameters`, `initOverrides?`): `Promise`<[`PredictionResponse`](../interfaces/PredictionResponse.md)\>
 
 Will return the prediction
 Get a prediction
@@ -226,17 +380,17 @@ Get a prediction
 
 #### Returns
 
-`Promise`<[`GetPredictionResult`](../interfaces/GetPredictionResult.md)\>
+`Promise`<[`PredictionResponse`](../interfaces/PredictionResponse.md)\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:193
+src/apis/Deep3Api.ts:355
 
 ___
 
 ### getPredictionRaw
 
-▸ **getPredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetPredictionResult`](../interfaces/GetPredictionResult.md)\>\>
+▸ **getPredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`PredictionResponse`](../interfaces/PredictionResponse.md)\>\>
 
 Will return the prediction
 Get a prediction
@@ -250,11 +404,107 @@ Get a prediction
 
 #### Returns
 
-`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`GetPredictionResult`](../interfaces/GetPredictionResult.md)\>\>
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`PredictionResponse`](../interfaces/PredictionResponse.md)\>\>
 
 #### Defined in
 
-src/apis/Deep3Api.ts:158
+src/apis/Deep3Api.ts:320
+
+___
+
+### getStakeSageHPrediction
+
+▸ **getStakeSageHPrediction**(`requestParameters`, `initOverrides?`): `Promise`<[`StakeSageHResponse`](../interfaces/StakeSageHResponse.md)\>
+
+Will return the prediction
+Get a StakeSage-H prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetStakeSageHPredictionRequest`](../interfaces/GetStakeSageHPredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`StakeSageHResponse`](../interfaces/StakeSageHResponse.md)\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:395
+
+___
+
+### getStakeSageHPredictionRaw
+
+▸ **getStakeSageHPredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`StakeSageHResponse`](../interfaces/StakeSageHResponse.md)\>\>
+
+Will return the prediction
+Get a StakeSage-H prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetStakeSageHPredictionRequest`](../interfaces/GetStakeSageHPredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`StakeSageHResponse`](../interfaces/StakeSageHResponse.md)\>\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:364
+
+___
+
+### getStakeSageLPrediction
+
+▸ **getStakeSageLPrediction**(`requestParameters`, `initOverrides?`): `Promise`<[`StakeSageLResponse`](../interfaces/StakeSageLResponse.md)\>
+
+Will return the prediction
+Get a StakeSage-L prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetStakeSageLPredictionRequest`](../interfaces/GetStakeSageLPredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`StakeSageLResponse`](../interfaces/StakeSageLResponse.md)\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:435
+
+___
+
+### getStakeSageLPredictionRaw
+
+▸ **getStakeSageLPredictionRaw**(`requestParameters`, `initOverrides?`): `Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`StakeSageLResponse`](../interfaces/StakeSageLResponse.md)\>\>
+
+Will return the prediction
+Get a StakeSage-L prediction
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `requestParameters` | [`GetStakeSageLPredictionRequest`](../interfaces/GetStakeSageLPredictionRequest.md) |
+| `initOverrides?` | `RequestInit` \| [`InitOverrideFunction`](../modules.md#initoverridefunction) |
+
+#### Returns
+
+`Promise`<[`ApiResponse`](../interfaces/ApiResponse.md)<[`StakeSageLResponse`](../interfaces/StakeSageLResponse.md)\>\>
+
+#### Defined in
+
+src/apis/Deep3Api.ts:404
 
 ___
 
