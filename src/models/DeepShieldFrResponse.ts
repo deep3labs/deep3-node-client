@@ -16,38 +16,38 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface HodlC1Response
+ * @interface DeepShieldFrResponse
  */
-export interface HodlC1Response {
+export interface DeepShieldFrResponse {
     /**
      * 
      * @type {number}
-     * @memberof HodlC1Response
+     * @memberof DeepShieldFrResponse
      */
     code: number;
     /**
      * 
      * @type {number}
-     * @memberof HodlC1Response
+     * @memberof DeepShieldFrResponse
      */
     result?: number;
 }
 
 /**
- * Check if a given object implements the HodlC1Response interface.
+ * Check if a given object implements the DeepShieldFrResponse interface.
  */
-export function instanceOfHodlC1Response(value: object): boolean {
+export function instanceOfDeepShieldFrResponse(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "code" in value;
 
     return isInstance;
 }
 
-export function HodlC1ResponseFromJSON(json: any): HodlC1Response {
-    return HodlC1ResponseFromJSONTyped(json, false);
+export function DeepShieldFrResponseFromJSON(json: any): DeepShieldFrResponse {
+    return DeepShieldFrResponseFromJSONTyped(json, false);
 }
 
-export function HodlC1ResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): HodlC1Response {
+export function DeepShieldFrResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): DeepShieldFrResponse {
     if ((json === undefined) || (json === null)) {
         return json;
     }
@@ -58,7 +58,7 @@ export function HodlC1ResponseFromJSONTyped(json: any, ignoreDiscriminator: bool
     };
 }
 
-export function HodlC1ResponseToJSON(value?: HodlC1Response | null): any {
+export function DeepShieldFrResponseToJSON(value?: DeepShieldFrResponse | null): any {
     if (value === undefined) {
         return undefined;
     }

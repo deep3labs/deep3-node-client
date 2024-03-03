@@ -16,38 +16,38 @@ import { exists, mapValues } from '../runtime';
 /**
  * 
  * @export
- * @interface HodlC1Response
+ * @interface StakeSageCResponse
  */
-export interface HodlC1Response {
+export interface StakeSageCResponse {
     /**
      * 
      * @type {number}
-     * @memberof HodlC1Response
+     * @memberof StakeSageCResponse
      */
     code: number;
     /**
      * 
      * @type {number}
-     * @memberof HodlC1Response
+     * @memberof StakeSageCResponse
      */
     result?: number;
 }
 
 /**
- * Check if a given object implements the HodlC1Response interface.
+ * Check if a given object implements the StakeSageCResponse interface.
  */
-export function instanceOfHodlC1Response(value: object): boolean {
+export function instanceOfStakeSageCResponse(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "code" in value;
 
     return isInstance;
 }
 
-export function HodlC1ResponseFromJSON(json: any): HodlC1Response {
-    return HodlC1ResponseFromJSONTyped(json, false);
+export function StakeSageCResponseFromJSON(json: any): StakeSageCResponse {
+    return StakeSageCResponseFromJSONTyped(json, false);
 }
 
-export function HodlC1ResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): HodlC1Response {
+export function StakeSageCResponseFromJSONTyped(json: any, ignoreDiscriminator: boolean): StakeSageCResponse {
     if ((json === undefined) || (json === null)) {
         return json;
     }
@@ -58,7 +58,7 @@ export function HodlC1ResponseFromJSONTyped(json: any, ignoreDiscriminator: bool
     };
 }
 
-export function HodlC1ResponseToJSON(value?: HodlC1Response | null): any {
+export function StakeSageCResponseToJSON(value?: StakeSageCResponse | null): any {
     if (value === undefined) {
         return undefined;
     }

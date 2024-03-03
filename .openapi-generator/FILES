@@ -2,7 +2,9 @@ package.json
 src/apis/Deep3Api.ts
 src/apis/index.ts
 src/index.ts
-src/models/ChainsResponse.ts
+src/models/ChainsResponseInner.ts
+src/models/DeepShieldFrResponse.ts
+src/models/DeepShieldHftResponse.ts
 src/models/HodlC1Response.ts
 src/models/HodlC1XTokenRequest.ts
 src/models/HodlC1XTokenRequestMappingsInner.ts
@@ -10,9 +12,9 @@ src/models/HodlC1XTokenResponse.ts
 src/models/HodlC1XTokensRequest.ts
 src/models/HodlC1XTokensRequestAddressesInner.ts
 src/models/HodlC1XTokensResponseInner.ts
-src/models/HodlerResponse.ts
-src/models/ModelsResponse.ts
+src/models/ModelsResponseInner.ts
 src/models/PredictionResponse.ts
+src/models/StakeSageCResponse.ts
 src/models/StakeSageHResponse.ts
 src/models/StakeSageLResponse.ts
 src/models/index.ts

@@ -20,16 +20,20 @@
 ### Interfaces
 
 - [ApiResponse](interfaces/ApiResponse.md)
-- [ChainsResponse](interfaces/ChainsResponse.md)
+- [ChainsResponseInner](interfaces/ChainsResponseInner.md)
 - [ConfigurationParameters](interfaces/ConfigurationParameters.md)
 - [Consume](interfaces/Consume.md)
+- [DeepShieldFrResponse](interfaces/DeepShieldFrResponse.md)
+- [DeepShieldHftResponse](interfaces/DeepShieldHftResponse.md)
 - [ErrorContext](interfaces/ErrorContext.md)
 - [FetchParams](interfaces/FetchParams.md)
+- [GetDeepShieldFrPredictionRequest](interfaces/GetDeepShieldFrPredictionRequest.md)
+- [GetDeepShieldHftPredictionRequest](interfaces/GetDeepShieldHftPredictionRequest.md)
 - [GetHodlC1PredictionRequest](interfaces/GetHodlC1PredictionRequest.md)
 - [GetHodlC1XTokenPredictionRequest](interfaces/GetHodlC1XTokenPredictionRequest.md)
 - [GetHodlC1XTokenPredictionsRequest](interfaces/GetHodlC1XTokenPredictionsRequest.md)
-- [GetHodlerPredictionRequest](interfaces/GetHodlerPredictionRequest.md)
 - [GetPredictionRequest](interfaces/GetPredictionRequest.md)
+- [GetStakeSageCPredictionRequest](interfaces/GetStakeSageCPredictionRequest.md)
 - [GetStakeSageHPredictionRequest](interfaces/GetStakeSageHPredictionRequest.md)
 - [GetStakeSageLPredictionRequest](interfaces/GetStakeSageLPredictionRequest.md)
 - [HodlC1Response](interfaces/HodlC1Response.md)
@@ -39,14 +43,14 @@
 - [HodlC1XTokensRequest](interfaces/HodlC1XTokensRequest.md)
 - [HodlC1XTokensRequestAddressesInner](interfaces/HodlC1XTokensRequestAddressesInner.md)
 - [HodlC1XTokensResponseInner](interfaces/HodlC1XTokensResponseInner.md)
-- [HodlerResponse](interfaces/HodlerResponse.md)
 - [Middleware](interfaces/Middleware.md)
-- [ModelsResponse](interfaces/ModelsResponse.md)
+- [ModelsResponseInner](interfaces/ModelsResponseInner.md)
 - [PredictionResponse](interfaces/PredictionResponse.md)
 - [RequestContext](interfaces/RequestContext.md)
 - [RequestOpts](interfaces/RequestOpts.md)
 - [ResponseContext](interfaces/ResponseContext.md)
 - [ResponseTransformer](interfaces/ResponseTransformer.md)
+- [StakeSageCResponse](interfaces/StakeSageCResponse.md)
 - [StakeSageHResponse](interfaces/StakeSageHResponse.md)
 - [StakeSageLResponse](interfaces/StakeSageLResponse.md)
 
@@ -70,9 +74,15 @@
 
 ### Functions
 
-- [ChainsResponseFromJSON](modules.md#chainsresponsefromjson)
-- [ChainsResponseFromJSONTyped](modules.md#chainsresponsefromjsontyped)
-- [ChainsResponseToJSON](modules.md#chainsresponsetojson)
+- [ChainsResponseInnerFromJSON](modules.md#chainsresponseinnerfromjson)
+- [ChainsResponseInnerFromJSONTyped](modules.md#chainsresponseinnerfromjsontyped)
+- [ChainsResponseInnerToJSON](modules.md#chainsresponseinnertojson)
+- [DeepShieldFrResponseFromJSON](modules.md#deepshieldfrresponsefromjson)
+- [DeepShieldFrResponseFromJSONTyped](modules.md#deepshieldfrresponsefromjsontyped)
+- [DeepShieldFrResponseToJSON](modules.md#deepshieldfrresponsetojson)
+- [DeepShieldHftResponseFromJSON](modules.md#deepshieldhftresponsefromjson)
+- [DeepShieldHftResponseFromJSONTyped](modules.md#deepshieldhftresponsefromjsontyped)
+- [DeepShieldHftResponseToJSON](modules.md#deepshieldhftresponsetojson)
 - [HodlC1ResponseFromJSON](modules.md#hodlc1responsefromjson)
 - [HodlC1ResponseFromJSONTyped](modules.md#hodlc1responsefromjsontyped)
 - [HodlC1ResponseToJSON](modules.md#hodlc1responsetojson)
@@ -94,15 +104,15 @@
 - [HodlC1XTokensResponseInnerFromJSON](modules.md#hodlc1xtokensresponseinnerfromjson)
 - [HodlC1XTokensResponseInnerFromJSONTyped](modules.md#hodlc1xtokensresponseinnerfromjsontyped)
 - [HodlC1XTokensResponseInnerToJSON](modules.md#hodlc1xtokensresponseinnertojson)
-- [HodlerResponseFromJSON](modules.md#hodlerresponsefromjson)
-- [HodlerResponseFromJSONTyped](modules.md#hodlerresponsefromjsontyped)
-- [HodlerResponseToJSON](modules.md#hodlerresponsetojson)
-- [ModelsResponseFromJSON](modules.md#modelsresponsefromjson)
-- [ModelsResponseFromJSONTyped](modules.md#modelsresponsefromjsontyped)
-- [ModelsResponseToJSON](modules.md#modelsresponsetojson)
+- [ModelsResponseInnerFromJSON](modules.md#modelsresponseinnerfromjson)
+- [ModelsResponseInnerFromJSONTyped](modules.md#modelsresponseinnerfromjsontyped)
+- [ModelsResponseInnerToJSON](modules.md#modelsresponseinnertojson)
 - [PredictionResponseFromJSON](modules.md#predictionresponsefromjson)
 - [PredictionResponseFromJSONTyped](modules.md#predictionresponsefromjsontyped)
 - [PredictionResponseToJSON](modules.md#predictionresponsetojson)
+- [StakeSageCResponseFromJSON](modules.md#stakesagecresponsefromjson)
+- [StakeSageCResponseFromJSONTyped](modules.md#stakesagecresponsefromjsontyped)
+- [StakeSageCResponseToJSON](modules.md#stakesagecresponsetojson)
 - [StakeSageHResponseFromJSON](modules.md#stakesagehresponsefromjson)
 - [StakeSageHResponseFromJSONTyped](modules.md#stakesagehresponsefromjsontyped)
 - [StakeSageHResponseToJSON](modules.md#stakesagehresponsetojson)
@@ -111,7 +121,9 @@
 - [StakeSageLResponseToJSON](modules.md#stakesagelresponsetojson)
 - [canConsumeForm](modules.md#canconsumeform)
 - [exists](modules.md#exists)
-- [instanceOfChainsResponse](modules.md#instanceofchainsresponse)
+- [instanceOfChainsResponseInner](modules.md#instanceofchainsresponseinner)
+- [instanceOfDeepShieldFrResponse](modules.md#instanceofdeepshieldfrresponse)
+- [instanceOfDeepShieldHftResponse](modules.md#instanceofdeepshieldhftresponse)
 - [instanceOfHodlC1Response](modules.md#instanceofhodlc1response)
 - [instanceOfHodlC1XTokenRequest](modules.md#instanceofhodlc1xtokenrequest)
 - [instanceOfHodlC1XTokenRequestMappingsInner](modules.md#instanceofhodlc1xtokenrequestmappingsinner)
@@ -119,9 +131,9 @@
 - [instanceOfHodlC1XTokensRequest](modules.md#instanceofhodlc1xtokensrequest)
 - [instanceOfHodlC1XTokensRequestAddressesInner](modules.md#instanceofhodlc1xtokensrequestaddressesinner)
 - [instanceOfHodlC1XTokensResponseInner](modules.md#instanceofhodlc1xtokensresponseinner)
-- [instanceOfHodlerResponse](modules.md#instanceofhodlerresponse)
-- [instanceOfModelsResponse](modules.md#instanceofmodelsresponse)
+- [instanceOfModelsResponseInner](modules.md#instanceofmodelsresponseinner)
 - [instanceOfPredictionResponse](modules.md#instanceofpredictionresponse)
+- [instanceOfStakeSageCResponse](modules.md#instanceofstakesagecresponse)
 - [instanceOfStakeSageHResponse](modules.md#instanceofstakesagehresponse)
 - [instanceOfStakeSageLResponse](modules.md#instanceofstakesagelresponse)
 - [mapValues](modules.md#mapvalues)
@@ -259,7 +271,7 @@ src/runtime.ts:271
 Deep3 Labs API
 No description provided (generated by Openapi Generator https://github.com/openapitools/openapi-generator)
 
-The version of the OpenAPI document: v0.0.3
+The version of the OpenAPI document: v0.0.4
 
 NOTE: This class is auto generated by OpenAPI Generator (https://openapi-generator.tech).
 https://openapi-generator.tech
@@ -300,9 +312,9 @@ src/runtime.ts:63
 
 ## Functions
 
-### ChainsResponseFromJSON
+### ChainsResponseInnerFromJSON
 
-▸ **ChainsResponseFromJSON**(`json`): [`ChainsResponse`](interfaces/ChainsResponse.md)
+▸ **ChainsResponseInnerFromJSON**(`json`): [`ChainsResponseInner`](interfaces/ChainsResponseInner.md)
 
 #### Parameters
 
@@ -312,17 +324,17 @@ src/runtime.ts:63
 
 #### Returns
 
-[`ChainsResponse`](interfaces/ChainsResponse.md)
+[`ChainsResponseInner`](interfaces/ChainsResponseInner.md)
 
 #### Defined in
 
-src/models/ChainsResponse.ts:54
+src/models/ChainsResponseInner.ts:54
 
 ___
 
-### ChainsResponseFromJSONTyped
+### ChainsResponseInnerFromJSONTyped
 
-▸ **ChainsResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`ChainsResponse`](interfaces/ChainsResponse.md)
+▸ **ChainsResponseInnerFromJSONTyped**(`json`, `ignoreDiscriminator`): [`ChainsResponseInner`](interfaces/ChainsResponseInner.md)
 
 #### Parameters
 
@@ -333,23 +345,23 @@ ___
 
 #### Returns
 
-[`ChainsResponse`](interfaces/ChainsResponse.md)
+[`ChainsResponseInner`](interfaces/ChainsResponseInner.md)
 
 #### Defined in
 
-src/models/ChainsResponse.ts:58
+src/models/ChainsResponseInner.ts:58
 
 ___
 
-### ChainsResponseToJSON
+### ChainsResponseInnerToJSON
 
-▸ **ChainsResponseToJSON**(`value?`): `any`
+▸ **ChainsResponseInnerToJSON**(`value?`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value?` | [`ChainsResponse`](interfaces/ChainsResponse.md) |
+| `value?` | [`ChainsResponseInner`](interfaces/ChainsResponseInner.md) |
 
 #### Returns
 
@@ -357,7 +369,129 @@ ___
 
 #### Defined in
 
-src/models/ChainsResponse.ts:70
+src/models/ChainsResponseInner.ts:70
+
+___
+
+### DeepShieldFrResponseFromJSON
+
+▸ **DeepShieldFrResponseFromJSON**(`json`): [`DeepShieldFrResponse`](interfaces/DeepShieldFrResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`DeepShieldFrResponse`](interfaces/DeepShieldFrResponse.md)
+
+#### Defined in
+
+src/models/DeepShieldFrResponse.ts:46
+
+___
+
+### DeepShieldFrResponseFromJSONTyped
+
+▸ **DeepShieldFrResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`DeepShieldFrResponse`](interfaces/DeepShieldFrResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`DeepShieldFrResponse`](interfaces/DeepShieldFrResponse.md)
+
+#### Defined in
+
+src/models/DeepShieldFrResponse.ts:50
+
+___
+
+### DeepShieldFrResponseToJSON
+
+▸ **DeepShieldFrResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`DeepShieldFrResponse`](interfaces/DeepShieldFrResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/DeepShieldFrResponse.ts:61
+
+___
+
+### DeepShieldHftResponseFromJSON
+
+▸ **DeepShieldHftResponseFromJSON**(`json`): [`DeepShieldHftResponse`](interfaces/DeepShieldHftResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`DeepShieldHftResponse`](interfaces/DeepShieldHftResponse.md)
+
+#### Defined in
+
+src/models/DeepShieldHftResponse.ts:46
+
+___
+
+### DeepShieldHftResponseFromJSONTyped
+
+▸ **DeepShieldHftResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`DeepShieldHftResponse`](interfaces/DeepShieldHftResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`DeepShieldHftResponse`](interfaces/DeepShieldHftResponse.md)
+
+#### Defined in
+
+src/models/DeepShieldHftResponse.ts:50
+
+___
+
+### DeepShieldHftResponseToJSON
+
+▸ **DeepShieldHftResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`DeepShieldHftResponse`](interfaces/DeepShieldHftResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/DeepShieldHftResponse.ts:61
 
 ___
 
@@ -788,70 +922,9 @@ src/models/HodlC1XTokensResponseInner.ts:61
 
 ___
 
-### HodlerResponseFromJSON
+### ModelsResponseInnerFromJSON
 
-▸ **HodlerResponseFromJSON**(`json`): [`HodlerResponse`](interfaces/HodlerResponse.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `json` | `any` |
-
-#### Returns
-
-[`HodlerResponse`](interfaces/HodlerResponse.md)
-
-#### Defined in
-
-src/models/HodlerResponse.ts:46
-
-___
-
-### HodlerResponseFromJSONTyped
-
-▸ **HodlerResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`HodlerResponse`](interfaces/HodlerResponse.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `json` | `any` |
-| `ignoreDiscriminator` | `boolean` |
-
-#### Returns
-
-[`HodlerResponse`](interfaces/HodlerResponse.md)
-
-#### Defined in
-
-src/models/HodlerResponse.ts:50
-
-___
-
-### HodlerResponseToJSON
-
-▸ **HodlerResponseToJSON**(`value?`): `any`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value?` | [`HodlerResponse`](interfaces/HodlerResponse.md) |
-
-#### Returns
-
-`any`
-
-#### Defined in
-
-src/models/HodlerResponse.ts:61
-
-___
-
-### ModelsResponseFromJSON
-
-▸ **ModelsResponseFromJSON**(`json`): [`ModelsResponse`](interfaces/ModelsResponse.md)
+▸ **ModelsResponseInnerFromJSON**(`json`): [`ModelsResponseInner`](interfaces/ModelsResponseInner.md)
 
 #### Parameters
 
@@ -861,17 +934,17 @@ ___
 
 #### Returns
 
-[`ModelsResponse`](interfaces/ModelsResponse.md)
+[`ModelsResponseInner`](interfaces/ModelsResponseInner.md)
 
 #### Defined in
 
-src/models/ModelsResponse.ts:47
+src/models/ModelsResponseInner.ts:47
 
 ___
 
-### ModelsResponseFromJSONTyped
+### ModelsResponseInnerFromJSONTyped
 
-▸ **ModelsResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`ModelsResponse`](interfaces/ModelsResponse.md)
+▸ **ModelsResponseInnerFromJSONTyped**(`json`, `ignoreDiscriminator`): [`ModelsResponseInner`](interfaces/ModelsResponseInner.md)
 
 #### Parameters
 
@@ -882,23 +955,23 @@ ___
 
 #### Returns
 
-[`ModelsResponse`](interfaces/ModelsResponse.md)
+[`ModelsResponseInner`](interfaces/ModelsResponseInner.md)
 
 #### Defined in
 
-src/models/ModelsResponse.ts:51
+src/models/ModelsResponseInner.ts:51
 
 ___
 
-### ModelsResponseToJSON
+### ModelsResponseInnerToJSON
 
-▸ **ModelsResponseToJSON**(`value?`): `any`
+▸ **ModelsResponseInnerToJSON**(`value?`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value?` | [`ModelsResponse`](interfaces/ModelsResponse.md) |
+| `value?` | [`ModelsResponseInner`](interfaces/ModelsResponseInner.md) |
 
 #### Returns
 
@@ -906,7 +979,7 @@ ___
 
 #### Defined in
 
-src/models/ModelsResponse.ts:62
+src/models/ModelsResponseInner.ts:62
 
 ___
 
@@ -968,6 +1041,67 @@ ___
 #### Defined in
 
 src/models/PredictionResponse.ts:61
+
+___
+
+### StakeSageCResponseFromJSON
+
+▸ **StakeSageCResponseFromJSON**(`json`): [`StakeSageCResponse`](interfaces/StakeSageCResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+
+#### Returns
+
+[`StakeSageCResponse`](interfaces/StakeSageCResponse.md)
+
+#### Defined in
+
+src/models/StakeSageCResponse.ts:46
+
+___
+
+### StakeSageCResponseFromJSONTyped
+
+▸ **StakeSageCResponseFromJSONTyped**(`json`, `ignoreDiscriminator`): [`StakeSageCResponse`](interfaces/StakeSageCResponse.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `json` | `any` |
+| `ignoreDiscriminator` | `boolean` |
+
+#### Returns
+
+[`StakeSageCResponse`](interfaces/StakeSageCResponse.md)
+
+#### Defined in
+
+src/models/StakeSageCResponse.ts:50
+
+___
+
+### StakeSageCResponseToJSON
+
+▸ **StakeSageCResponseToJSON**(`value?`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value?` | [`StakeSageCResponse`](interfaces/StakeSageCResponse.md) |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/models/StakeSageCResponse.ts:61
 
 ___
 
@@ -1134,11 +1268,11 @@ src/runtime.ts:288
 
 ___
 
-### instanceOfChainsResponse
+### instanceOfChainsResponseInner
 
-▸ **instanceOfChainsResponse**(`value`): `boolean`
+▸ **instanceOfChainsResponseInner**(`value`): `boolean`
 
-Check if a given object implements the ChainsResponse interface.
+Check if a given object implements the ChainsResponseInner interface.
 
 #### Parameters
 
@@ -1152,7 +1286,51 @@ Check if a given object implements the ChainsResponse interface.
 
 #### Defined in
 
-src/models/ChainsResponse.ts:45
+src/models/ChainsResponseInner.ts:45
+
+___
+
+### instanceOfDeepShieldFrResponse
+
+▸ **instanceOfDeepShieldFrResponse**(`value`): `boolean`
+
+Check if a given object implements the DeepShieldFrResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/DeepShieldFrResponse.ts:39
+
+___
+
+### instanceOfDeepShieldHftResponse
+
+▸ **instanceOfDeepShieldHftResponse**(`value`): `boolean`
+
+Check if a given object implements the DeepShieldHftResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/DeepShieldHftResponse.ts:39
 
 ___
 
@@ -1310,33 +1488,11 @@ src/models/HodlC1XTokensResponseInner.ts:39
 
 ___
 
-### instanceOfHodlerResponse
+### instanceOfModelsResponseInner
 
-▸ **instanceOfHodlerResponse**(`value`): `boolean`
+▸ **instanceOfModelsResponseInner**(`value`): `boolean`
 
-Check if a given object implements the HodlerResponse interface.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `object` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-src/models/HodlerResponse.ts:39
-
-___
-
-### instanceOfModelsResponse
-
-▸ **instanceOfModelsResponse**(`value`): `boolean`
-
-Check if a given object implements the ModelsResponse interface.
+Check if a given object implements the ModelsResponseInner interface.
 
 #### Parameters
 
@@ -1350,7 +1506,7 @@ Check if a given object implements the ModelsResponse interface.
 
 #### Defined in
 
-src/models/ModelsResponse.ts:39
+src/models/ModelsResponseInner.ts:39
 
 ___
 
@@ -1373,6 +1529,28 @@ Check if a given object implements the PredictionResponse interface.
 #### Defined in
 
 src/models/PredictionResponse.ts:39
+
+___
+
+### instanceOfStakeSageCResponse
+
+▸ **instanceOfStakeSageCResponse**(`value`): `boolean`
+
+Check if a given object implements the StakeSageCResponse interface.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `object` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/models/StakeSageCResponse.ts:39
 
 ___
 

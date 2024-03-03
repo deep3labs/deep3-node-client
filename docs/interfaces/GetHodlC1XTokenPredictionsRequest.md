@@ -16,4 +16,4 @@
 
 #### Defined in
 
-src/apis/Deep3Api.ts:65
+src/apis/Deep3Api.ts:81

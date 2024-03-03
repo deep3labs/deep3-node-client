@@ -47,4 +47,4 @@ try {
 
 ## Documentation
 
-Typedocs available [here](modules.md)
+Typedocs available [here](docs/modules.md)
